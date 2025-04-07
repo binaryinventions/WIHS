@@ -1,0 +1,61 @@
+<?xml version = "1.0" encoding = "utf-8" ?> 
+
+<component name = "WIHSRadio" extends = "Scene" >
+	<script type ="text/brightscript" uri = "pkg:/source/main.brs"/>
+  <children>
+    <Group
+			translation = "[-20,-20]">
+      <Rectangle
+				id = "playBar"
+				height = "500"
+				width = "400"
+				color = "0xFFFFFFFF"
+				opacity = ".5"
+				translation = "[475,125]">
+        </Rectangle>
+    </Group>
+
+    <Poster
+      id="wihsPoster"
+      uri="pkg:/images/wihs-logo.png"
+      width="268"
+      height="135"
+      translation="[515,145]" />
+
+    <Label
+      id = "nowPlayingLabel" 
+      width = "350"
+			color = "0x111111"
+      translation = "[165,250]"
+      horizAlign = "center"
+      vertAlign = "center">
+    </Label>
+
+		 <Label
+					id = "play"
+					color = "0x111111"
+					width = "100"
+					height = "120"
+					text = "N"
+					translation = "[625,345]">
+					<Font
+						id = "Sosa-Regular"
+						role = "font"
+						uri = "pkg:/fonts/sosa-regular-webfont.ttf"
+						size = "60"/>
+		</Label>
+
+    <Label 
+      id = "pressPlayLabel" 
+      width = "600" 
+      height = "60" 
+			color = "0x111111"
+      text = "Press Play / Pause to Listen" 
+      horizAlign = "center" 
+      vertAlign = "center" 
+      visible = "true"
+      translation =  "[358, 545]">
+    </Label>
+
+  </children>
+</component>
